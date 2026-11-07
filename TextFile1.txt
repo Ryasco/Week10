@@ -1,0 +1,15 @@
+A graph is the right structure to represent a social network for a few reasons. 
+Each person is represented as a node and each friendship an edge, connecting two people. 
+Naturally, graphs model relationships between people and/or groups and can represent any 
+number of groups and/or people, meeting the need of a social network with an endless amount of people.
+On the opposite end, a list would not work well for this because lists store items in a 
+sequence and do not naturally represent relationships between people. The need for friend 
+lists would require additional structures. A tree doesn’t work because the tree structure 
+requires a parent/child structure. In a social network, friendships are mutual and the structure
+of a friend list does not meet the need for or match the tree structure.
+
+
+Printing the network requires visiting every person and friendship, requiring additional time as the 
+network grows larger. The same goes for checking if two people are already friends, it takes more time 
+as the list grows larger. Using the adjacency lists makes creating friendships efficient because you 
+only need to add each person to the other’s friend list for the vice versa to take effect. 
